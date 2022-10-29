@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Home from "./Home"
+import Signup from "./Signup"
+import Signin from "./Signin"
+import Doctors from "./Doctors"
+import Family from "./Family"
+import Everyone from "./Everyone"
+import Desktop9 from "./Desktop9"
+import Employees from "./Employees"
+import Empremium from "./Empremium"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Routes>
+    
+        <Route index element={<Home />} />
+        <Route path="Signup" element={<Signup />} />
+        <Route path="Doctors" element={<Doctors/>} />  
+        <Route path="Signin" element={<Signin />} />
+        <Route path="Family" element={<Family />} /> 
+        <Route path="Everyone" element={<Everyone />} />
+        <Route path="Employees" element={<Employees />} />
+        <Route path="Desktop9" element={<Desktop9/>} />
+        <Route path="Empremium" element={<Empremium/>} />
+    </Routes>
+  </BrowserRouter> 
+    
   );
 }
 
