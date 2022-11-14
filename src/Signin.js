@@ -20,15 +20,15 @@ export default function Signin() {
   };
   const onClickHandler = async () => {
     try {
-      const response = await axios.post(
+      const { data } = await axios.post(
         "https://lab-one-hmo.herokuapp.com/api/v1/patients/signin",
         {
           email,
           password,
         }
       );
-      console.log(response.data);
-      if (response.data.status === "success") {
+      if (data.status === "success") {
+        localStorage.setItem("token", data.token);
         navigate("/Doctors");
       }
     } catch (error) {
