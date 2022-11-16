@@ -27,22 +27,15 @@ import Payment3 from "./Payment3"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
-
-
-
-
 function App() {
-
   return (
     <BrowserRouter>
-    <Routes>
-    
+      <Routes>
         <Route index element={<Home />} />
         <Route path="Signup" element={<Signup />} />
-        <Route path="Doctors" element={<Doctors/>} />  
+        <Route path="Doctors" element={<Doctors />} />
         <Route path="Signin" element={<Signin />} />
-        <Route path="Family" element={<Family />} /> 
+        <Route path="Family" element={<Family />} />
         <Route path="Everyone" element={<Everyone />} />
         <Route path="Employees" element={<Employees />} />
         <Route path="Desktop9" element={<Desktop9/>} />

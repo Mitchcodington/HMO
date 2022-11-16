@@ -29,12 +29,76 @@ import docava4 from "./images/docava4.png"
 import { Link } from "react-router-dom";
 
 export default function Doctors() {
+  return (
     
-    return (
     <div className="main-container">
+      <div className="main-dept">
+        <img className="dept-logo" src={logo} alt="" />
 
-< div className="main-dept"> 
-   <img className="dept-logo" src={logo} alt="" /> 
+        <h2 className="list-dept">
+          List Of Medical
+          <br />
+          Practitionals
+        </h2>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">CARDIOLOGIST</p>
+        </div>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">DERMATOLOGIST</p>
+        </div>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">ONCOLOGIST</p>
+        </div>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">ORTHOPEDIST</p>
+        </div>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">NEUROLOGIST</p>
+        </div>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">UROLOGIST</p>
+        </div>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">OPHTHALMOLOGIST</p>
+        </div>
+        <div className="img-dept">
+          <p>
+            <img className="heart" src={heart} alt="" />
+          </p>
+          <p className="logist">NEPHROLOGIST</p>
+        </div>
+        <div className="learnmor">
+          <p className="learn-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
+            fusce platea non sed enim. Faucibus orci tortor orci malesuada
+            pellentesque ultrices urna tellus ac. Dictum duis neque lacus ipsum
+            lectus tristique. Quam tempus facilisi lectus magna ipsum ac
+            ultrices aliquam donec.
+          </p>
+          <button className="learn-btn">Learn More</button>
+        </div>
+      </div>
 
    <h2 className="list-dept">List Of Medical<br/>
    Practitionals</h2>
@@ -131,9 +195,6 @@ referred Read More...<br/>
 
 </div>
     
-
-
-
 
 
 <div>
@@ -236,8 +297,7 @@ Adifer Medical Center</p>
 </div>
 <button className="book-now"><Link style={{color: 'white', textDecoration: 'none' }} to="/family">Book Now</Link></button>
 </div>
-
-
 </div>
-    )
+
+  )
 }
