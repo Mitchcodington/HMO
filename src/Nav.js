@@ -11,10 +11,10 @@ export default function Nav() {
     <img src={logo} alt="" /> 
     </div>
       <div className="navi"> 
-      <p className="home"><span className="home-space"><Link to="/">Home</Link></span></p>
-      <p className="about"><span className="home-space"><Link to="/Family">About</Link></span></p>
-      <p className="book"><span className="home-space">Book Appointment</span></p>
-      <p className="hmo"><span className="home-space"><Link to="/Doctors">HMO</Link></span></p>
+      <p className="home"><span className="home-space"><Link style={{color: '#01245E', textDecoration: 'none' }} to="/">Home</Link></span></p>
+      <p className="about"><span className="home-space"><Link style={{color: '#01245E', textDecoration: 'none' }} to="/Family">About</Link></span></p>
+      <p className="book"><span className="home-space"><Link style={{color: '#01245E', textDecoration: 'none' }} to="/Doctors">Book Appointment</Link></span></p>
+      <p className="hmo"><span className="home-space"><Link style={{color: '#01245E', textDecoration: 'none' }} to="/family">HMO</Link></span></p>
       </div>
       
      </nav> 

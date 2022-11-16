@@ -4,6 +4,7 @@ import sufacebook from "./images/sufacebook.png"
 import sutwitter from "./images/sutwitter.png"
 import logo from "./images/LabOne-2.png"
 import model from "./images/model.jpg"
+import { Link } from "react-router-dom";
 
 export default function Signin() {
  
@@ -40,7 +41,7 @@ visibility_off
  </div> 
 </fieldset>
 <p ><a className="forget" href="password.html">Forget Password</a></p>
-  <button className="signup-btn">Sign up</button>
+  <button className="signup-btn"><Link to="/Family">Sign in</Link></button>
  
   <div class="header__center2"><span className="signinwith"><b>Sign in with</b></span></div>
   <div className="socials">
