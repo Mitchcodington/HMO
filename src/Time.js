@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { TimePicker } from 'react-ios-time-picker';
+import React from 'react'
 
-export default function  MyApp() {
-   const [value, setValue] = useState('10:00');
+import TimePicker from 'reactjs-timepicker'
 
-   const onChange = (timeValue) => {
-      setValue(timeValue);
-   }
+export default function Time() {
 
-   return (
-      <div>
-         <TimePicker onChange={onChange} value={value} />
-      </div>
-   );
+return (
+<div className="timepicker">
+<TimePicker
+defaultTime={'00:00'}
+onChange={console.log}
+/>
+</div>
+)
+
 }
+

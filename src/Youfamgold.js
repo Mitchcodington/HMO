@@ -1,4 +1,5 @@
-import premium from "./images/premium.png"
+import gold from "./images/gold.png"
+
 import { Link } from "react-router-dom";
 
 
@@ -7,7 +8,7 @@ export default function Youfamgold() {
     return (
         <div className="premium-body">
      <div className="premium-main">
-     <img className="premium"  src={premium} alt="" /> 
+     <img className="premium"  src={gold} alt="" /> 
      <h2 className="premium-bold">GOLD PLAN<br/>
      <span className="premium-light">Doctors Available For This Plan :</span></h2>
 

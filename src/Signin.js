@@ -1,40 +1,40 @@
-import React, { useState } from "react";
-import axios from "axios";
-import sugoogle from "./images/sugoogle.png";
-import sufacebook from "./images/sufacebook.png";
-import sutwitter from "./images/sutwitter.png";
-import logo from "./images/LabOne-2.png";
-import model from "./images/model.jpg";
-import { Link, useNavigate } from "react-router-dom";
+import React from "react"
+import gog from "./images/gog.png";
+import fac from "./images/fac.png";
+import twi from "./images/twi.png";
+import logo from "./images/LabOne-2.png"
+import model from "./images/model.jpg"
+
+
 
 export default function Signin() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-  const onChangeHandler = (e) => {
-    if (e.target.name === "email") {
-      setEmail(e.target.value);
-    } else {
-      setPassword(e.target.value);
-    }
-  };
-  const onClickHandler = async () => {
-    try {
-      const { data } = await axios.post(
-        "https://lab-one-hmo.herokuapp.com/api/v1/patients/signin",
-        {
-          email,
-          password,
-        }
-      );
-      if (data.status === "success") {
-        localStorage.setItem("token", data.token);
-        navigate("/Doctors");
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const navigate = useNavigate();
+  // const onChangeHandler = (e) => {
+    // if (e.target.name === "email") {
+      // setEmail(e.target.value);
+    // } else {
+      // setPassword(e.target.value);
+    // }
+  // };
+  // const onClickHandler = async () => {
+    // try {
+      // const { data } = await axios.post(
+        // "https://lab-one-hmo.herokuapp.com/api/v1/patients/signin",
+        // {
+          // email,
+          // password,
+        // }
+      // );
+      // if (data.status === "success") {
+        // localStorage.setItem("token", data.token);
+        // navigate("/Doctors");
+      // }
+    // } catch (error) {
+      // console.log(error);
+    // }
+  // };
   return (
     <div className="signup-main">
       <div className="labone-div">
@@ -42,11 +42,9 @@ export default function Signin() {
         <div className="lab">
           <p className="h1-labone">LabOne</p>
           <span className="signup-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis
-            fusce platea non sed enim. Faucibus orci tortor orci malesuada
-            pellentesque ultrices urna tellus ac. Dictum duis neque lacus ipsum
-            lectus tristique. Quam tempus facilisi lectus magna ipsum ac
-            ultrices aliquam donec.
+          LabOne Connects Patients to Exceptional Virtual Care . We offer a range of
+           online services for patients and providers available on your smartphone, 
+           computer or tablet. We also offer HMO to individuals at a very low cost.
           </span>
         </div>
       </div>
@@ -59,8 +57,8 @@ export default function Signin() {
           <div className="input">
             <input
               placeholder="glory34@gmail.com"
-              value={email}
-              onChange={onChangeHandler}
+              // value={email}
+              // onChange={onChangeHandler}
               name="email"
               type="text"
               required
@@ -74,10 +72,11 @@ export default function Signin() {
           <div className="input">
             <input
               required
-              value={password}
-              onChange={onChangeHandler}
+              // value={password}
+              // onChange={onChangeHandler}
               name="password"
               type="password"
+              placeholder="*************"
             />
             <span className="material-symbols-outlined">visibility_off</span>
           </div>
@@ -87,21 +86,18 @@ export default function Signin() {
             Forget Password
           </a>
         </p>
-        <button className="signup-btn" onClick={onClickHandler}>
-          Sign In
-        </button>
 
-        <div className="header__center2">
-          <span className="signinwith">
-            <b>Sign in with</b>
-          </span>
-        </div>
-        <div className="socials">
-          <img className="sugoogle" src={sugoogle} alt="" />
-          <img className="sufacebook" src={sufacebook} alt="" />
-          <img className="sutwitter" src={sutwitter} alt="" />
-        </div>
-      </div>
-    </div>
-  );
+        <button className="signup-btn">Sign In</button>
+  <div class="header__center2"><span className="signinwith"><b>Sign in with</b></span></div>
+  <div className="socials">
+  <img className="sugoogle" src={gog} alt="" /> 
+  <img className="sufacebook" src={fac} alt="" /> 
+  <img className="sutwitter" src={twi} alt="" /> 
+  </div>
+</div>
+</div>
+
+
+
+    )
 }

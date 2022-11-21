@@ -9,7 +9,7 @@ export default function Payment() {
         <>
  <div className="main-payment3">      
 <div className="logo-mail-pay">
-<p><img className="logo-pay3" src={logo} alt="" /></p>
+<p><Link style={{color: '#01245E', textDecoration: 'none' }} to="/"><img className="logo-pay3" src={logo} alt="" /></Link></p>
 <div className="email-pay">
     <p className="email-pay" style={{color:"#868484B8"}}>OnieR45@gmail.com</p>
     <p className="ngn">pay <span style={{ color:"red"}}><b>NGN 24,700</b></span></p>
@@ -42,7 +42,7 @@ export default function Payment() {
 <input className="card-number" type="text" placeholder="123"/>
 </div>
 </div>
-<button className="card-pay-btn"><b><Link style={{color: 'white', textDecoration: 'none' }} to="/Doctors">pay NGN 24,700</Link></b></button>
+<button className="card-pay-btn"><b><Link style={{color: 'white', textDecoration: 'none' }} to="/Doctors">Pay <b>NGN 24,700</b></Link></b></button>
 <p className="tiny-text-under">pay with all card.</p>
 </div>
 

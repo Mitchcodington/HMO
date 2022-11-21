@@ -3,7 +3,9 @@ import youfam1 from "./images/youfam1.png"
 import youfam2 from "./images/youfam2.png"
 import youfam3 from "./images/youfam3.png"
 import { Link } from "react-router-dom";
-
+import Getbutton from "./Getbutton"
+import Plangold from "./Plangold"
+import Planbronze from "./Planbronze"
 
 
 export default function YouFamily() {
@@ -11,24 +13,26 @@ export default function YouFamily() {
         <>
         <div className="img-select">
 
-<p><img className="logo-fam" src={logo} alt="" /></p>
+<p><Link style={{color: '#01245E', textDecoration: 'none' }} to="/"><img className="logo-fam" src={logo} alt="" /></Link></p>
 
 <div className="select">
 <div class="callus">
             <span><button className="contact-btn">Our health Plan</button></span>
             <div className="phone-number">
-            <p><Link style={{textDecoration: 'none'}} to="/Employees">For You And Your Family</Link></p>
-            <p><Link to="/Employees">For Your Parents</Link></p>
-            <p><Link to="/Employees">For Your Employees</Link></p>
+            <p><Link style={{textDecoration: 'none', color: "blue"}} to="/YouFamily">For You And Your Family</Link></p>
+            <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Yourparents">For Your Parents</Link></p>
+            <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Employees">For Your Employees</Link></p>
             </div>
           </div>
 
-          <select className="select2" required>
-<option >Support</option>
-<option className="call">Call Us: +2348061602274</option>
-<option>Whatsapp: +2348061602274</option>
-<option>Hello@labonehealt h.com</option>
-</select>
+          <div class="callus">
+            <span><button className="contact-btn">Support</button></span>
+            <div className="phone-number">
+            <p>Call Us: +2348061602274</p>
+            <p>Whatsapp:+2348061602274</p>
+            <p style={{ color: "yellowgreen"}}>Hello@labonehealth.com</p>
+            </div>
+          </div>
 <button className="started-btn">Get Started</button>
 </div>
 
@@ -49,7 +53,7 @@ export default function YouFamily() {
     <p className="light-text"> 
     Get a health cover that is designed to suit your specific needs and enjoy access to quality 
     healthcare and superior service delivery for as low as ₦4,050 per month. </p>
-<button className="business-btn"><Link style={{color: 'white', textDecoration: 'none' }} to="/empremium">Learn More</Link></button>
+<Getbutton/>
 </div>
 </div>
 
@@ -60,7 +64,7 @@ export default function YouFamily() {
     <h2 className="bold-text-fam">Gold Plan</h2>
     <p className="light-text"> An affordable health plan with access to quality 
     healthcare for you and your loved ones for as low as ₦2,050 per month.  </p>
-<button className="business-btn"><Link style={{color: 'white', textDecoration: 'none' }} to="/Youfamgold">Learn More</Link></button>
+    <Plangold/>
 </div>
 </div>
 
@@ -71,7 +75,7 @@ export default function YouFamily() {
     <h2 className="bold-text">Bronze Plan</h2>
     <p className="light-text">An affordable health plan with access to quality
      healthcare for you and your loved ones for as low as ₦1,550 per month</p>
-<button className="business-btn"><Link style={{color: 'white', textDecoration: 'none' }} to="/Youfambronze">Learn More</Link></button>
+     <Planbronze/>
 </div>
 </div>
 

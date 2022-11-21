@@ -9,29 +9,30 @@ export default function FamgoldYearly() {
         
         <div className="img-select">
 
-        <p><img className="logo-fam" src={logo} alt="" /></p>
+        <p><Link style={{color: '#01245E', textDecoration: 'none' }} to="/"><img className="logo-fam" src={logo} alt="" /></Link></p>
 
         <div className="select">
-        <div class="callus">
-                    <span><button className="contact-btn">Our health Plan</button></span>
-                    <div className="phone-number">
-                    <p><Link style={{textDecoration: 'none'}} to="/YouFamily">For You And Your Family</Link></p>
-                    <p><Link to="/Employees">For Your Parents</Link></p>
-                    <p><Link to="/Employees">For Your Employees</Link></p>
-                    </div>
-                  </div>
+<div class="callus">
+            <span><button className="contact-btn">Our health Plan</button></span>
+            <div className="phone-number">
+            <p><Link style={{textDecoration: 'none', color: "blue"}} to="/YouFamily">For You And Your Family</Link></p>
+            <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Yourparents">For Your Parents</Link></p>
+            <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Employees">For Your Employees</Link></p>
+            </div>
+          </div>
 
-                  <select className="select2" required>
-        <option >Support</option>
-        <option className="call">Call Us: +2348061602274</option>
-        <option>Whatsapp: +2348061602274</option>
-        <option>Hello@labonehealt h.com</option>
-        </select>
-        <button className="get-strd-btn">Get Started</button>
-        </div>
+          <div class="callus">
+            <span><button className="contact-btn">Support</button></span>
+            <div className="phone-number">
+            <p>Call Us: +2348061602274</p>
+            <p>Whatsapp:+2348061602274</p>
+            <p style={{ color: "yellowgreen"}}>Hello@labonehealth.com</p>
+            </div>
+          </div>
+<button className="started-btn">Get Started</button>
+</div>
 
-        </div>
-       
+</div>
        
        
 
@@ -54,11 +55,12 @@ export default function FamgoldYearly() {
             <p className="amount-payment"><span className="naira"> ₦ 263,050</span>
             <span className="family-payment">Family Payment<br/>
             Per Month</span></p>
-            <button className="card-get-btn">Get</button>
+            
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
              from meal taken to all form of other activities: <span className="million">N2.5million</span> per year</p>
             <p className="tiny-text"><span className="million">N4.8million</span> for surgeries to be performed on patients if advised my doctors.</p>
+            <button className="card-get-btn"><Link style={{color: 'white', textDecoration: 'none' }} to="/Payment1">Get</Link></button>
          </div>
 
          <div className="amount-card">
@@ -66,11 +68,12 @@ export default function FamgoldYearly() {
             <p className="amount-payment"><span className="naira"> ₦ 267,500</span>
             <span className="family-payment">Family Payment<br/>
             Per Month</span></p>
-            <button className="card-get-btn">Get</button>
+           
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
              from meal taken to all form of other activities: <span className="million">N2.5million</span> per year</p>
             <p className="tiny-text"><span className="million">N4.8million</span> for surgeries to be performed on patients if advised my doctors.</p>
+            <button className="card-get-btn"><Link style={{color: 'white', textDecoration: 'none' }} to="/Payment1">Get</Link></button>
          </div>
 
          <div className="amount-card">
@@ -78,11 +81,12 @@ export default function FamgoldYearly() {
             <p className="amount-payment"><span className="naira"> ₦ 263,050</span>
             <span className="family-payment">Family Payment<br/>
             Per Month</span></p>
-            <button className="card-get-btn">Get</button>
+            
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
              from meal taken to all form of other activities: <span className="million">N2.5million</span> per year</p>
             <p className="tiny-text"><span className="million">N4.8million</span> for surgeries to be performed on patients if advised my doctors.</p>
+            <button className="card-get-btn"><Link style={{color: 'white', textDecoration: 'none' }} to="/Payment1">Get</Link></button>
          </div>
 
          </div>

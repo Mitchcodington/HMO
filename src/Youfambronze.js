@@ -1,4 +1,4 @@
-import premium from "./images/premium.png"
+import bronze from "./images/bronze.png"
 import { Link } from "react-router-dom";
 
 
@@ -7,7 +7,7 @@ export default function Youfambronze() {
     return (
         <div className="premium-body">
      <div className="premium-main">
-     <img className="premium"  src={premium} alt="" /> 
+     <img className="premium"  src={bronze} alt="" /> 
      <h2 className="premium-bold">BRONZE PLAN<br/>
      <span className="premium-light">Doctors Available For This Plan :</span></h2>
 
