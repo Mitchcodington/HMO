@@ -3,7 +3,6 @@ import star from "./images/star.png"
 import add from "./images/add.png"
 import doc1 from "./images/doc1.png"
 import plus from "./images/plus.png"
-import logo from "./images/LabOne-2.png"
 import heartt from "./images/heartt.png"
 import derma from "./images/derma.png"
 import nephro from "./images/nephro.png"
@@ -16,7 +15,6 @@ import CalendarGfg from "./CalendarGfg"
 import chat from "./images/chat.png"
 import rachel from "./images/rachel.png"
 import bell from "./images/bell.png"
-
 import etang from "./images/etang.png"
 import faith from "./images/faith.png"
 import grace from "./images/grace.png"
@@ -26,16 +24,17 @@ import docava1 from "./images/docava1.png"
 import docava2 from "./images/docava2.png"
 import docava3 from "./images/docava3.png"
 import docava4 from "./images/docava4.png"
-
+import Nav from "./Nav"
 import { Link } from "react-router-dom";
 
 
 export default function Cardiologist() {
   return (
+    <>
+    <Nav/>
     <div className="main-container">
       <div className="main-dept">
-      <Link style={{color: '#01245E', textDecoration: 'none' }} to="/"><img className="dept-logo" src={logo} alt="" /></Link>
-
+     
    <h2 className="list-dept">List Of Medical<br/>
    Practitionals</h2>
     <div className="neuro-div">
@@ -231,8 +230,7 @@ Adifer Medical Center</p>
 </div>
 <button className="book-cardiologist"><Link style={{color: 'white', textDecoration: 'none' }} to="/Desktop9">Book Now</Link></button>
 </div>
-
-
 </div>
+</>
     )
 }
