@@ -14,7 +14,8 @@ TECHNOLOGIES
 Project is created with:
 * React: 18.2.0,
 
-Setup
+SETUP
+
 To run this project, install it locally using npm:
 $ npm start
 or visit : https://labone.netlify.app/
