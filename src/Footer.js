@@ -52,18 +52,18 @@ export default function Footer() {
                   </div>
                        <button className="learn-more">Learn more</button>
             </footer>
-</div>
+ </div>
 
-<div className="homefoot-text-img">
-<div>
-<h2 className="vision-bold">Our Vision</h2>
-<p className="vision-text">Our vision is to make virtual care the first step on any healthcare journey.
-     We're developing technologies to connect to patients and delivering the
-      highest standard of clinical quality at every touchpoint. 
-</p>
-</div>
-<p className="home-img2"><img  src={footdoc} alt="" /></p>
-</div>
+        <div className="homefoot-text-img">
+             <div>
+                 <h2 className="vision-bold">Our Vision</h2>
+                 <p className="vision-text">Our vision is to make virtual care the first step on any healthcare journey.
+                      're developing technologies to connect to patients and delivering the
+                       standard of clinical quality at every touchpoint. 
+                 </p>
+             </div>
+             <p className="home-img2"><img  src={footdoc} alt="" /></p>
+       </div>
 
 <div className="homefoot-text-img">
 <p><img className="ellipse" src={Ellipse} alt="" />
