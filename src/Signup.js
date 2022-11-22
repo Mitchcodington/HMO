@@ -22,7 +22,7 @@ export default function Signup() {
       </div>
 
       <div className="main-left">
-        <img className="signup-logo" src={logo} alt="" />
+      <Link style={{color: 'gray', textDecoration: 'none' }} to="/"><img className="signup-logo" src={logo} alt="" /></Link>
         <fieldset className="fieldset">
           <legend>Name</legend>
           <div className="input">

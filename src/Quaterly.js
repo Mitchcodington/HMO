@@ -53,9 +53,7 @@ export default function Quaterly() {
         <div className="card-main">
          <div className="amount-card">
             <h6 className="card-h6">For You And Your Family</h6>
-            <p className="amount-payment"><span className="naira"> ₦ 78,050</span>
-            <span className="family-payment">Family Payment<br/>
-            Per Month</span></p>
+            <p className="amount-payment"><span className="naira"> ₦ 78,050</span></p>
             
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
@@ -66,9 +64,7 @@ export default function Quaterly() {
 
          <div className="amount-card">
             <h6 className="parent-h6">For Your Parents</h6>
-            <p className="amount-payment"><span className="naira"> ₦ 83,500</span>
-            <span className="family-payment">Family Payment<br/>
-            Per Month</span></p>
+            <p className="amount-payment"><span className="naira"> ₦ 83,500</span></p>
             
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
@@ -79,9 +75,7 @@ export default function Quaterly() {
 
          <div className="amount-card">
             <h6 className="employee-h6">For Your Employee</h6>
-            <p className="amount-payment"><span className="naira"> ₦ 78,050</span>
-            <span className="family-payment">Family Payment<br/>
-            Per Month</span></p>
+            <p className="amount-payment"><span className="naira"> ₦ 78,050</span></p>
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
              from meal taken to all form of other activities: <span className="million">N2.5million</span> per year</p>

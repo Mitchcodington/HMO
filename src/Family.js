@@ -6,31 +6,31 @@ import logo from "./images/LabOne-2.png"
 
 export default function Family() {
     return (
-        <>
-      <div className="img-select">
+<>
+  <div className="img-select">
 
-      <p><Link style={{color: '#01245E', textDecoration: 'none' }} to="/"><img className="logo-fam" src={logo} alt="" /></Link></p>
+           <p><Link style={{color: '#01245E', textDecoration: 'none' }} to="/"><img className="logo-fam" src={logo} alt="" /></Link></p>
 
-<div className="select">
-<div class="callus">
-            <span><button className="contact-btn">Our health Plan</button></span>
-            <div className="phone-number">
-            <p><Link style={{textDecoration: 'none', color: "blue"}} to="/YouFamily">For You And Your Family</Link></p>
-            <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Yourparents">For Your Parents</Link></p>
-            <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Employees">For Your Employees</Link></p>
-            </div>
+       <div className="select">
+           <div class="callus">
+                   <span><button className="contact-btn">Our health Plan</button></span>
+               <div className="phone-number">
+                    <p><Link style={{textDecoration: 'none', color: "blue"}} to="/YouFamily">For You And Your Family</Link></p>
+                    <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Yourparents">For Your Parents</Link></p>
+                    <p><Link style={{textDecoration: 'none' , color: "blue"}} to="/Employees">For Your Employees</Link></p>
+               </div>
           </div>
 
-          <div class="callus">
-            <span><button className="contact-btn">Support</button></span>
-            <div className="phone-number">
-            <p>Call Us: +2348061602274</p>
-            <p>Whatsapp:+2348061602274</p>
-            <p style={{ color: "yellowgreen"}}>Hello@labonehealth.com</p>
-            </div>
-          </div>
-<button className="started-btn">Get Started</button>
-</div>
+           <div class="callus">
+                <span><button className="contact-btn">Support</button></span>
+                <div className="phone-number">
+                <p>Call Us: +2348061602274</p>
+                <p>Whatsapp:+2348061602274</p>
+                <p style={{ color: "yellowgreen"}}>Hello@labonehealth.com</p>
+             </div>
+       </div>
+          <button className="started-btn">Get Started</button>
+     </div>
 
 </div>
     

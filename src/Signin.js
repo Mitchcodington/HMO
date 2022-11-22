@@ -4,6 +4,7 @@ import fac from "./images/fac.png";
 import twi from "./images/twi.png";
 import logo from "./images/LabOne-2.png"
 import model from "./images/model.jpg"
+import { Link } from "react-router-dom";
 
 
 
@@ -38,7 +39,7 @@ export default function Signin() {
   return (
     <div className="signup-main">
       <div className="labone-div">
-        <img className="signup-img" src={model} alt="" />
+      <img className="signup-img" src={model} alt="" />
         <div className="lab">
           <p className="h1-labone">LabOne</p>
           <span className="signup-text">
@@ -50,7 +51,7 @@ export default function Signin() {
       </div>
 
       <div className="main-signleft">
-        <img className="signup-logo" src={logo} alt="" />
+      <Link style={{color: 'gray', textDecoration: 'none' }} to="/"><img className="signup-logo" src={logo} alt="" /></Link>
 
         <fieldset className="fieldset">
           <legend>Email Address</legend>

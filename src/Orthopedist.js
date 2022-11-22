@@ -24,14 +24,14 @@ import docava1 from "./images/docava1.png"
 import docava2 from "./images/docava2.png"
 import docava3 from "./images/docava3.png"
 import docava4 from "./images/docava4.png"
-import Nav from "./Nav"
+import NavBookApp from "./NavBookApp"
 import { Link } from "react-router-dom";
 
 
 export default function Orthopedist() {
   return (
     <>
-    <Nav/>
+    <NavBookApp/>
     <div className="main-container">
       <div className="main-dept">
    <h2 className="list-dept">List Of Medical<br/>
@@ -53,8 +53,8 @@ export default function Orthopedist() {
     <p className="logist"><Link style={{color: '#1295F3', textDecoration: 'none' }} to="/Orthopedist">ORTHOPEDIST</Link></p>
     </div>
     <div className="img-dept">
-    <p><img className="heart" src={neuro} alt="" /></p>
-    <p className="logist"><Link style={{color: 'gray', textDecoration: 'none' }} to="/Doctors">NEUROLOGIST</Link></p>
+    <p><img className="heartt" src={neuro} alt="" /></p>
+    <p className="neulogist"><Link style={{color: 'gray', textDecoration: 'none' }} to="/Doctors">NEUROLOGIST</Link></p>
     </div>
     <div className="img-dept">
     <p><img className="heart" src={uro} alt="" /></p>
@@ -68,14 +68,7 @@ export default function Orthopedist() {
     <p><img className="heart" src={nephro} alt="" /></p>
     <p className="logist">NEPHROLOGIST</p>
     </div>
-    <div className="learnmor">
-        <p className="learn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Turpis fusce platea non sed enim. Faucibus orci tortor orci 
-malesuada pellentesque ultrices urna tellus ac. Dictum duis 
-neque lacus ipsum lectus tristique. Quam tempus facilisi 
-lectus magna ipsum ac ultrices aliquam donec.</p>
-<button className="learn-btn">Learn More</button>
-    </div>
+    
 </div>
 
 <div className="main-middle">
@@ -93,7 +86,7 @@ mic
     </div>
     </div>
     
-< div className="orthopedist">
+< div className="img-text">
 <img className="neorologist" src={orthoped} alt=""/>
 <div className="neuro-main">
 <h2 className="neuro-heading">ORTHOPEDIST</h2>
@@ -228,7 +221,7 @@ Adifer Medical Center</p>
 </div>
 </div>
 </div>
-<button className="book-orthope"><Link style={{color: 'white', textDecoration: 'none' }} to="/Desktop9">Book Now</Link></button>
+<button className="book-now"><Link style={{color: 'white', textDecoration: 'none' }} to="/Family">Book Now</Link></button>
 </div>
 </div>
 </>

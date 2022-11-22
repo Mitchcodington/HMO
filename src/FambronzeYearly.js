@@ -54,8 +54,7 @@ export default function FambronzeYearly() {
          <div className="amount-card">
             <h6 className="card-h6">For You And Your Family</h6>
             <p className="amount-payment"><span className="naira"> ₦ 249,050</span>
-            <span className="family-payment">Family Payment<br/>
-            Per Month</span></p>
+            </p>
             
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
@@ -67,8 +66,7 @@ export default function FambronzeYearly() {
          <div className="amount-card">
             <h6 className="parent-h6">For Your Parents</h6>
             <p className="amount-payment"><span className="naira"> ₦ 253,500</span>
-            <span className="family-payment">Family Payment<br/>
-            Per Month</span></p>
+            </p>
             
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,
@@ -80,8 +78,7 @@ export default function FambronzeYearly() {
          <div className="amount-card">
             <h6 className="employee-h6">For Your Employee</h6>
             <p className="amount-payment"><span className="naira"> ₦ 249,550</span>
-            <span className="family-payment">Family Payment<br/>
-            Per Month</span></p>
+            </p>
            
             <p className="tiny-text">Medical checkout recommendation of drug: <span className="million">N1.7million</span> per year</p>
             <p className="tiny-text">Personal medical practionals to be attended to Individually,

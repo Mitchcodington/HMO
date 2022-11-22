@@ -42,7 +42,7 @@ export default function Payment() {
 <input className="card-number" type="text" placeholder="123"/>
 </div>
 </div>
-<button className="card-pay-btn"><b><Link style={{color: 'white', textDecoration: 'none' }} to="/Doctors">Pay <b>NGN 24,700</b></Link></b></button>
+<button className="card-pay-btn"><b><Link style={{color: 'white', textDecoration: 'none' }} to="/Desktop9">Pay <b>NGN 24,700</b></Link></b></button>
 <p className="tiny-text-under">pay with all card.</p>
 </div>
 

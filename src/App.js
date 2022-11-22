@@ -10,7 +10,6 @@ import Orthopedist from "./Orthopedist"
 import Urologist from "./Urologist"
 import Ophthalmologist from "./Ophthalmologist"
 import Nephrologist from "./Nephrologist"
-import Footer from "./Footer"
 import Family from "./Family"
 import Everyone from "./Everyone"
 import Desktop9 from "./Desktop9"
@@ -35,6 +34,7 @@ import Paymentyear from "./Paymentyear"
 import Parentpayment from "./Parentpayment"
 import Payment2 from "./Payment2"
 import Payment3 from "./Payment3"
+import Footernav from "./Footernav"
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -53,7 +53,7 @@ function App() {
         <Route path="Ophthalmologist" element={<Ophthalmologist />} />
         <Route path="Nephrologist" element={<Nephrologist />} />
         <Route path="Signin" element={<Signin />} />
-        <Route path="Footer" element={<Footer />} />
+        <Route path="Footernav" element={<Footernav />} />
         <Route path="Everyone" element={<Everyone />} />
         <Route path="Employees" element={<Employees />} />
         <Route path="Desktop9" element={<Desktop9/>} />

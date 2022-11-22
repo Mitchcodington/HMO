@@ -27,12 +27,12 @@ import docava3 from "./images/docava3.png"
 import docava4 from "./images/docava4.png"
 
 import { Link } from "react-router-dom";
-import Nav from "./Nav"
+import NavBookApp from "./NavBookApp"
 
 export default function Doctors() {
   return (
      <>
-      <Nav />
+      <NavBookApp />
     <div className="main-container">
       <div className="main-dept">
       
@@ -55,8 +55,8 @@ export default function Doctors() {
     <p className="logist"><Link style={{color: 'gray', textDecoration: 'none' }} to="/Orthopedist">ORTHOPEDIST</Link></p>
     </div>
     <div className="neuro-div">
-    <p><img className="heart" src={neuro} alt="" /></p>
-    <p className="logist"><Link style={{color: '#1295F3', textDecoration: 'none' }} to="/Doctors">NEUROLOGIST</Link></p>
+    <p><img className="heartt" src={neuro} alt="" /></p>
+    <p className="neulogist"><Link style={{color: '#1295F3', textDecoration: 'none' }} to="/Doctors">NEUROLOGIST</Link></p>
     </div>
     <div className="img-dept">
     <p><img className="heart" src={uro} alt="" /></p>
@@ -70,14 +70,7 @@ export default function Doctors() {
     <p><img className="heart" src={nephro} alt="" /></p>
     <p className="logist">NEPHROLOGIST</p>
     </div>
-    <div className="learnmor">
-        <p className="learn-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Turpis fusce platea non sed enim. Faucibus orci tortor orci 
-malesuada pellentesque ultrices urna tellus ac. Dictum duis 
-neque lacus ipsum lectus tristique. Quam tempus facilisi 
-lectus magna ipsum ac ultrices aliquam donec.</p>
-<button className="learn-btn">Learn More</button>
-    </div>
+
 </div>
 
 <div className="main-middle">
@@ -121,9 +114,9 @@ referred Read More...<br/>
 <img className="docava3" src={docava3} alt=""/>
 <img className="docava4" src={docava4} alt=""/>
 <img className="add" src={add} alt=""/></p>
-<CalendarGfg />
+<CalendarGfg />  
 </div>
-    
+
 <div>
  <div className="bell-chat-prof" >
 <p><img className="chat" src={chat} alt="" /></p>
@@ -221,7 +214,7 @@ Adifer Medical Center</p>
 </div>
 </div>
 </div>
-<button className="book-now"><Link style={{color: 'white', textDecoration: 'none' }} to="/Desktop9">Book Now</Link></button>
+<button className="book-now"><Link style={{color: 'white', textDecoration: 'none' }} to="/Family">Book Now</Link></button>
 </div>
 </div>
 </>
